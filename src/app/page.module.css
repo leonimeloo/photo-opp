@@ -1,0 +1,42 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  min-height: 100dvh;
+  background: var(--background);
+  overflow: hidden;
+  padding: 60px;
+}
+
+.logo {
+  width: 127.5px;
+  height: 83px;
+}
+
+.title {
+  font: 700 96px var(--font-titillium-web), "Arial", sans-serif;
+  white-space: pre-line;
+  line-height: 96px;
+  text-align: center;
+}
+
+.startBtn {
+  font: 700 18px var(--font-titillium-web), "Arial", sans-serif;
+  padding: 12px 50%;
+  background-color: #606060;
+  border: none;
+  color: #fff;
+}
+
+.loading {
+  width: 40px;
+  height: 40px;
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
