@@ -79,8 +79,8 @@ export default function Camera() {
             ref={webcamRef}
             audio={false}
             videoConstraints={{
-              width: 720,
-              height: 1280,
+              width: 1280,
+              height: 720,
               facingMode:
                 switchCamera === 0 ? "user" : { exact: "environment" },
             }}
